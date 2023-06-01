@@ -85,7 +85,7 @@ function updateCanvas() {
     ctx.fillStyle = "#fff"; // Name text color
     ctx.font = "24px Arial"; // Name font style
     ctx.textAlign = "center";
-    ctx.rotate((-15 * Math.PI) / 180);
+    // ctx.rotate((-15 * Math.PI) / 180);
     ctx.fillText(name, centerX - 00, centerY - imageSize / 2 + 300); // Adjust position as needed
   }
 }
