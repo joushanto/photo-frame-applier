@@ -17,6 +17,19 @@ let uploadedImage = null;
 let zoomValue = 1;
 let rotationValue = 0;
 
+// Default values
+const defaultImageSrc = 'default_image.jpg';
+const defaultName = 'Your Name Here';
+
+// Set default image and name
+const defaultImage = new Image();
+defaultImage.onload = function() {
+  uploadedImage = defaultImage;
+  updateCanvas();
+};
+defaultImage.src = defaultImageSrc;
+nameInput.value = defaultName;
+
 // Event listener for file upload
 uploadInput.addEventListener("change", handleUpload, false);
 
@@ -72,7 +85,8 @@ function updateCanvas() {
     ctx.fillStyle = "#fff"; // Name text color
     ctx.font = "24px Arial"; // Name font style
     ctx.textAlign = "center";
-    ctx.fillText(name, centerX, centerY - imageSize / 2 + 30); // Adjust position as needed
+    ctx.rotate((-15 * Math.PI) / 180);
+    ctx.fillText(name, centerX - 00, centerY - imageSize / 2 + 300); // Adjust position as needed
   }
 }
 
