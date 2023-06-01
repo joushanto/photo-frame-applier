@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Photo Editor</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div id="container">
+    <h1>Photo Editor</h1>
+    <div id="photo-editor">
+      <input type="file" id="upload-input" accept="image/*">
+      <input type="text" id="name-input" placeholder="Enter your full name">
+      <div id="controls">
+        <label for="zoom-range">Zoom:</label>
+        <input type="range" id="zoom-range" min="0" max="200" value="100">
+        <label for="rotation-range">Rotation:</label>
+        <input type="range" id="rotation-range" min="-180" max="180" value="0">
+        <button id="crop-btn" disabled>Crop</button>
+        <button id="download-btn" disabled>Download</button>
+      </div>
+      <canvas id="canvas" width="400" height="400"></canvas>
+      <img id="frame" src="frame.png" alt="Frame">
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,49 @@
+#container {
+    text-align: center;
+  }
+  
+  #photo-editor {
+    position: relative;
+    display: inline-block;
+  }
+  
+  #video, #canvas {
+    border: 1px solid #ccc;
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  #frame {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 400px;
+    height: 400px;
+    /* height: 100%; */
+    object-fit: contain;
+    pointer-events: none;
+    visibility: hidden;
+  }
+  
+  #controls {
+    margin-bottom: 10px;
+  }
+  
+  #download-btn {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  #download-btn:disabled {
+    background-color: #aaa;
+    cursor: not-allowed;
+  }
+  
+  #canvas {
+    border: 4px solid red;
+  }
